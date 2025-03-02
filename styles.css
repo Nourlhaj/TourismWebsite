@@ -142,6 +142,7 @@ section {
 }
 
 .clickable-border {
+    border-radius: 20%;
     text-decoration: none;
     position: relative;
     width: 150px;
