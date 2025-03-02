@@ -7,7 +7,7 @@ body {
     color: #333;
 }
 
-/* Center the form */
+
 .login-container {
     width: 300px;
     margin: 100px auto;
@@ -18,7 +18,7 @@ body {
     border-radius: 8px;
 }
 
-/* Form inputs */
+
 input {
     width: 100%;
     padding: 10px;
@@ -35,6 +35,7 @@ input {
     text-align: center;
 }
 
+
 .hiking-spot {
     background: white;
     padding: 15px;
@@ -48,6 +49,7 @@ input {
     object-fit: cover;
     border-radius: 10px;
 }
+
 
 .hiking-spot h3 {
     margin-top: 10px;
@@ -118,6 +120,40 @@ section {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Space between borders */
+}
+
+
+.center {
+    justify-content: center;
+}
+
+.clickable-border {
+    text-decoration: none;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    padding: 20px;
+    border: 5px solid transparent;
+    outline: 5px solid #07bc67;
+    /* Clickable border */
+    outline-offset: -5px;
+    /* Align with element */
+    cursor: pointer;
 }
 
 .btn:hover {
