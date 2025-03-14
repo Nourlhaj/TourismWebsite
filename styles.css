@@ -171,7 +171,7 @@ section {
 @media (max-width: 768px) {
     .login-container {
         width: 95%;
-        margin: 5vh auto;
+        margin: 2vh auto;
     }
 
     .spot img {
