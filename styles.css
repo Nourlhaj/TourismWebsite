@@ -27,7 +27,7 @@ input {
     border-radius: 5px;
 }
 
-.hiking-container {
+.container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -36,14 +36,14 @@ input {
 }
 
 
-.hiking-spot {
-    background: white;
+.spot {
+    background: #f0fff8;
     padding: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
-.hiking-spot img {
+.spot img {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -51,12 +51,12 @@ input {
 }
 
 
-.hiking-spot h3 {
+.spot h3 {
     margin-top: 10px;
     font-size: 20px;
 }
 
-.hiking-spot p {
+.spot p {
     font-size: 16px;
     color: #666;
 }
@@ -139,9 +139,16 @@ section {
 
 .center {
     justify-content: center;
+    display: flex;
+}
+
+.center a {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .clickable-border {
+    padding: 50%;
     border-radius: 20%;
     text-decoration: none;
     position: relative;
@@ -159,4 +166,34 @@ section {
 
 .btn:hover {
     background: #07bc67;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        width: 95%;
+        margin: 5vh auto;
+    }
+
+    .spot img {
+        height: 150px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .clickable-border {
+        width: 100px;
+        height: 100px;
+    }
 }
